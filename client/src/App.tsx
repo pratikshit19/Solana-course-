@@ -7,6 +7,7 @@ import { ThemeProvider } from "./contexts/ThemeContext";
 import Home from "./pages/Home";
 import DailySchedule from "./pages/DailySchedule";
 import Projects from "./pages/Projects";
+import DocsViewer from "./pages/DocsViewer";
 
 
 function Router() {
@@ -15,6 +16,7 @@ function Router() {
       <Route path="/" component={Home} />
       <Route path="/schedule" component={DailySchedule} />
       <Route path="/projects" component={Projects} />
+      <Route path="/docs/:docId" component={DocsViewer} />
       <Route path={"/404"} component={NotFound} />
       {/* Final fallback route */}
       <Route component={NotFound} />
