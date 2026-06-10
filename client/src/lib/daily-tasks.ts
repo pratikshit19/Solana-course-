@@ -30,14 +30,14 @@ export const dailyTasks: DailyTask[] = [
       },
       {
         "title": "what is ownership)",
-        "url": "#",
+        "url": "https://solana.com/docs",
         "type": "documentation"
       }
     ],
     "practice": [
       {
         "title": "Complete Rustlings exercises `move_semantics/move_semantics1.rs` through `move_semantics4.rs`",
-        "url": "https://github.com/rust-lang/rustlings",
+        "url": "https://github.com/rust-lang/rustlings/tree/main/exercises/06_move_semantics",
         "type": "exercise"
       }
     ],
@@ -59,24 +59,24 @@ export const dailyTasks: DailyTask[] = [
       },
       {
         "title": "borrowing",
-        "url": "#",
+        "url": "https://solana.com/docs",
         "type": "documentation"
       },
       {
         "title": "mutable references)",
-        "url": "#",
+        "url": "https://solana.com/docs",
         "type": "documentation"
       }
     ],
     "practice": [
       {
         "title": "Complete Rustlings exercises `move_semantics/move_semantics5.rs` through `move_semantics6.rs`",
-        "url": "https://github.com/rust-lang/rustlings",
+        "url": "https://github.com/rust-lang/rustlings/tree/main/exercises/06_move_semantics",
         "type": "exercise"
       },
       {
         "title": "all `borrow_*` exercises",
-        "url": "#",
+        "url": "https://solana.com/docs",
         "type": "exercise"
       }
     ],
@@ -98,7 +98,7 @@ export const dailyTasks: DailyTask[] = [
       },
       {
         "title": "method syntax)",
-        "url": "#",
+        "url": "https://solana.com/docs",
         "type": "documentation"
       }
     ],
@@ -127,7 +127,7 @@ export const dailyTasks: DailyTask[] = [
       },
       {
         "title": "match control flow)",
-        "url": "#",
+        "url": "https://solana.com/docs",
         "type": "documentation"
       }
     ],
@@ -156,7 +156,7 @@ export const dailyTasks: DailyTask[] = [
       },
       {
         "title": "traits)",
-        "url": "#",
+        "url": "https://solana.com/docs",
         "type": "documentation"
       }
     ],
@@ -204,19 +204,19 @@ export const dailyTasks: DailyTask[] = [
     "study": [
       {
         "title": "Read \"The Rust Book\" chapter 19.5 (Macros)",
-        "url": "https://doc.rust-lang.org/book/",
+        "url": "https://doc.rust-lang.org/book/ch19-06-macros.html",
         "type": "documentation"
       }
     ],
     "practice": [
       {
         "title": "Study Anchor's `#[program]`",
-        "url": "#",
+        "url": "https://www.anchor-lang.com/",
         "type": "exercise"
       },
       {
         "title": "`#[derive(Accounts)]` macros by reading their documentation",
-        "url": "#",
+        "url": "https://solana.com/docs/core/accounts",
         "type": "exercise"
       }
     ],
@@ -233,20 +233,20 @@ export const dailyTasks: DailyTask[] = [
     "study": [
       {
         "title": "Read Solana docs \"Core Concepts\" - Programs vs Accounts",
-        "url": "https://solana.com/docs",
+        "url": "https://solana.com/docs/core/accounts",
         "type": "documentation"
       },
       {
         "title": "Transaction Model",
-        "url": "#",
+        "url": "https://solana.com/docs",
         "type": "documentation"
       }
     ],
     "practice": [
       {
         "title": "Compare EVM storage model with Solana accounts using RareSkills tutorial Module 1",
-        "url": "https://www.rareskills.io/solana-tutorial",
-        "type": "course"
+        "url": "https://solana.com/docs/core/accounts",
+        "type": "exercise"
       }
     ],
     "deliverable": "Create a comparison table: EVM contracts vs Solana programs (state storage, execution, fees, upgrades)",
@@ -262,29 +262,29 @@ export const dailyTasks: DailyTask[] = [
     "study": [
       {
         "title": "Read Solana docs \"Accounts\"",
-        "url": "https://solana.com/docs",
+        "url": "https://solana.com/docs/core/accounts",
         "type": "documentation"
       },
       {
         "title": "\"Rent\"",
-        "url": "#",
+        "url": "https://solana.com/docs/core/fees#rent",
         "type": "documentation"
       },
       {
         "title": "\"PDAs\" sections",
-        "url": "#",
+        "url": "https://solana.com/docs/core/pda",
         "type": "documentation"
       }
     ],
     "practice": [
       {
         "title": "Complete RareSkills Module 4.1-4.2 (Initializing Accounts",
-        "url": "https://www.rareskills.io/solana-tutorial",
-        "type": "course"
+        "url": "https://solana.com/docs/core/accounts",
+        "type": "exercise"
       },
       {
         "title": "Counter Tutorial)",
-        "url": "#",
+        "url": "https://solana.com/docs",
         "type": "exercise"
       }
     ],
@@ -301,20 +301,20 @@ export const dailyTasks: DailyTask[] = [
     "study": [
       {
         "title": "Read Solana docs \"Transactions\"",
-        "url": "https://solana.com/docs",
+        "url": "https://solana.com/docs/core/transactions",
         "type": "documentation"
       },
       {
         "title": "\"Signers\"",
-        "url": "#",
+        "url": "https://solana.com/docs/core/signers",
         "type": "documentation"
       }
     ],
     "practice": [
       {
         "title": "Use Solana CLI to inspect a real transaction on devnet",
-        "url": "https://docs.solana.com/cli",
-        "type": "tool"
+        "url": "https://solana.com/docs",
+        "type": "exercise"
       }
     ],
     "deliverable": "Build a transaction manually using web3.js that transfers SOL. Explain each component (instruction, accounts, signers)",
@@ -330,24 +330,24 @@ export const dailyTasks: DailyTask[] = [
     "study": [
       {
         "title": "Read Solana docs \"Compute Budget\"",
-        "url": "https://solana.com/docs",
+        "url": "https://solana.com/docs/core/fees#compute-budget",
         "type": "documentation"
       },
       {
         "title": "\"Program Execution\"",
-        "url": "#",
+        "url": "https://solana.com/docs/core/programs",
         "type": "documentation"
       }
     ],
     "practice": [
       {
         "title": "Set up local Solana validator",
-        "url": "#",
+        "url": "https://solana.com/docs",
         "type": "exercise"
       },
       {
         "title": "run a test program",
-        "url": "#",
+        "url": "https://github.com/solana-labs/solana-program-library",
         "type": "exercise"
       }
     ],
@@ -364,7 +364,7 @@ export const dailyTasks: DailyTask[] = [
     "study": [
       {
         "title": "Read Solana Cookbook \"CPI\" section",
-        "url": "https://solanacookbook.com/",
+        "url": "https://solanacookbook.com/core-concepts/cpi.html",
         "type": "documentation"
       }
     ],
@@ -388,14 +388,14 @@ export const dailyTasks: DailyTask[] = [
     "study": [
       {
         "title": "Read Solana Security Workshop \"Account Validation\" section",
-        "url": "#",
-        "type": "documentation"
+        "url": "https://github.com/solana-labs/solana-security-workshop",
+        "type": "course"
       }
     ],
     "practice": [
       {
         "title": "Review common vulnerabilities in RareSkills security module",
-        "url": "https://www.rareskills.io/solana-tutorial",
+        "url": "https://github.com/solana-labs/solana-security-workshop",
         "type": "course"
       }
     ],
@@ -412,14 +412,14 @@ export const dailyTasks: DailyTask[] = [
     "study": [
       {
         "title": "Review all previous days' materials",
-        "url": "#",
+        "url": "https://solana.com/docs",
         "type": "documentation"
       }
     ],
     "practice": [
       {
         "title": "Build a counter program in native Rust that increments a PDA-based account",
-        "url": "#",
+        "url": "https://github.com/solana-labs/solana-program-library/tree/master/examples/rust/custom-instruction",
         "type": "exercise"
       }
     ],
@@ -441,19 +441,19 @@ export const dailyTasks: DailyTask[] = [
       },
       {
         "title": "\"Project Structure\"",
-        "url": "#",
+        "url": "https://solana.com/docs",
         "type": "documentation"
       }
     ],
     "practice": [
       {
         "title": "Run `anchor init solana_counter`",
-        "url": "#",
+        "url": "https://www.anchor-lang.com/docs/getting-started",
         "type": "exercise"
       },
       {
         "title": "explore the generated files",
-        "url": "#",
+        "url": "https://solana.com/docs",
         "type": "exercise"
       }
     ],
@@ -475,14 +475,14 @@ export const dailyTasks: DailyTask[] = [
       },
       {
         "title": "\"Accounts\"",
-        "url": "#",
+        "url": "https://solana.com/docs/core/accounts",
         "type": "documentation"
       }
     ],
     "practice": [
       {
         "title": "Complete Anchor examples for basic program structure",
-        "url": "#",
+        "url": "https://www.anchor-lang.com/",
         "type": "exercise"
       }
     ],
@@ -506,22 +506,22 @@ export const dailyTasks: DailyTask[] = [
     "practice": [
       {
         "title": "Implement accounts with `#[account(mut)]`",
-        "url": "#",
+        "url": "https://solana.com/docs/core/accounts",
         "type": "exercise"
       },
       {
         "title": "`#[account(init)]`",
-        "url": "#",
+        "url": "https://solana.com/docs",
         "type": "exercise"
       },
       {
         "title": "`#[account(seeds",
-        "url": "#",
+        "url": "https://solana.com/docs",
         "type": "exercise"
       },
       {
         "title": "bump)]`",
-        "url": "#",
+        "url": "https://solana.com/docs",
         "type": "exercise"
       }
     ],
@@ -545,12 +545,12 @@ export const dailyTasks: DailyTask[] = [
     "practice": [
       {
         "title": "Create custom error types",
-        "url": "#",
+        "url": "https://www.anchor-lang.com/docs/errors",
         "type": "exercise"
       },
       {
         "title": "use them in instructions",
-        "url": "#",
+        "url": "https://solana.com/docs",
         "type": "exercise"
       }
     ],
@@ -574,12 +574,12 @@ export const dailyTasks: DailyTask[] = [
     "practice": [
       {
         "title": "Run `anchor test`",
-        "url": "#",
+        "url": "https://www.anchor-lang.com/docs/testing",
         "type": "exercise"
       },
       {
         "title": "write unit tests for your programs",
-        "url": "#",
+        "url": "https://github.com/solana-labs/solana-program-library",
         "type": "exercise"
       }
     ],
@@ -603,12 +603,12 @@ export const dailyTasks: DailyTask[] = [
     "practice": [
       {
         "title": "Generate",
-        "url": "#",
+        "url": "https://solana.com/docs",
         "type": "exercise"
       },
       {
         "title": "inspect IDL from your programs",
-        "url": "https://www.anchor-lang.com/",
+        "url": "https://solana.com/docs",
         "type": "exercise"
       }
     ],
@@ -625,24 +625,24 @@ export const dailyTasks: DailyTask[] = [
     "study": [
       {
         "title": "Review all Week 3 materials",
-        "url": "#",
+        "url": "https://solana.com/docs",
         "type": "documentation"
       }
     ],
     "practice": [
       {
         "title": "Build a todo list program with add",
-        "url": "#",
+        "url": "https://github.com/coral-xyz/anchor/tree/master/examples/tutorial",
         "type": "exercise"
       },
       {
         "title": "complete",
-        "url": "#",
+        "url": "https://solana.com/docs",
         "type": "exercise"
       },
       {
         "title": "delete operations",
-        "url": "#",
+        "url": "https://solana.com/docs",
         "type": "exercise"
       }
     ],
@@ -671,8 +671,8 @@ export const dailyTasks: DailyTask[] = [
     "practice": [
       {
         "title": "Use Solana CLI to create a test token",
-        "url": "https://docs.solana.com/cli",
-        "type": "tool"
+        "url": "https://solana.com/docs",
+        "type": "exercise"
       }
     ],
     "deliverable": "Create a token, mint tokens, and transfer them using CLI. Document each step",
@@ -688,14 +688,14 @@ export const dailyTasks: DailyTask[] = [
     "study": [
       {
         "title": "Read RareSkills Module 5.2 (Transferring SPL Tokens)",
-        "url": "https://www.rareskills.io/solana-tutorial",
-        "type": "course"
+        "url": "https://spl.solana.com/token",
+        "type": "documentation"
       }
     ],
     "practice": [
       {
         "title": "Build an Anchor program that transfers tokens",
-        "url": "#",
+        "url": "https://www.anchor-lang.com/",
         "type": "exercise"
       }
     ],
@@ -717,19 +717,19 @@ export const dailyTasks: DailyTask[] = [
       },
       {
         "title": "\"Burning\" sections",
-        "url": "#",
+        "url": "https://solana.com/docs",
         "type": "documentation"
       }
     ],
     "practice": [
       {
         "title": "Build a program that mints",
-        "url": "#",
+        "url": "https://github.com/solana-labs/solana-program-library",
         "type": "exercise"
       },
       {
         "title": "burns tokens",
-        "url": "#",
+        "url": "https://solana.com/docs",
         "type": "exercise"
       }
     ],
@@ -775,7 +775,7 @@ export const dailyTasks: DailyTask[] = [
     "study": [
       {
         "title": "Read Anchor Book \"CPI\"",
-        "url": "https://www.anchor-lang.com/",
+        "url": "https://solanacookbook.com/core-concepts/cpi.html",
         "type": "documentation"
       },
       {
@@ -787,7 +787,7 @@ export const dailyTasks: DailyTask[] = [
     "practice": [
       {
         "title": "Build a program that calls the Token Program via CPI",
-        "url": "#",
+        "url": "https://solanacookbook.com/core-concepts/cpi.html",
         "type": "exercise"
       }
     ],
@@ -811,7 +811,7 @@ export const dailyTasks: DailyTask[] = [
     "practice": [
       {
         "title": "Build an escrow program for token swaps",
-        "url": "#",
+        "url": "https://github.com/solana-labs/solana-program-library",
         "type": "exercise"
       }
     ],
@@ -828,14 +828,14 @@ export const dailyTasks: DailyTask[] = [
     "study": [
       {
         "title": "Review all Week 4 materials",
-        "url": "#",
+        "url": "https://solana.com/docs",
         "type": "documentation"
       }
     ],
     "practice": [
       {
         "title": "Build a program that allows users to swap Token A for Token B",
-        "url": "#",
+        "url": "https://solanacookbook.com/references/programs.html#how-to-build-an-escrow-program",
         "type": "exercise"
       }
     ],
@@ -852,24 +852,24 @@ export const dailyTasks: DailyTask[] = [
     "study": [
       {
         "title": "Read Solana Security Workshop",
-        "url": "#",
-        "type": "documentation"
+        "url": "https://github.com/solana-labs/solana-security-workshop",
+        "type": "course"
       },
       {
         "title": "audit reports",
-        "url": "#",
-        "type": "exercise"
+        "url": "https://github.com/sec-3/solana-security-audit-checklist",
+        "type": "documentation"
       }
     ],
     "practice": [
       {
         "title": "Review vulnerable code examples",
-        "url": "#",
+        "url": "https://solana.com/docs",
         "type": "exercise"
       },
       {
         "title": "identify issues",
-        "url": "#",
+        "url": "https://solana.com/docs",
         "type": "exercise"
       }
     ],
@@ -893,7 +893,7 @@ export const dailyTasks: DailyTask[] = [
     "practice": [
       {
         "title": "Build programs with different authorization schemes",
-        "url": "#",
+        "url": "https://solana.com/docs/core/fees#rent",
         "type": "exercise"
       }
     ],
@@ -910,19 +910,19 @@ export const dailyTasks: DailyTask[] = [
     "study": [
       {
         "title": "Read security best practices on reentrancy",
-        "url": "#",
+        "url": "https://www.rareskills.io/post/solana-reentrancy",
         "type": "documentation"
       }
     ],
     "practice": [
       {
         "title": "Build a vulnerable program",
-        "url": "#",
+        "url": "https://github.com/solana-labs/solana-security-workshop/tree/main/security-workshop",
         "type": "exercise"
       },
       {
         "title": "then fix it",
-        "url": "#",
+        "url": "https://solana.com/docs",
         "type": "exercise"
       }
     ],
@@ -946,12 +946,12 @@ export const dailyTasks: DailyTask[] = [
     "practice": [
       {
         "title": "Deploy an upgradeable program",
-        "url": "#",
+        "url": "https://solana.com/docs",
         "type": "exercise"
       },
       {
         "title": "upgrade it",
-        "url": "#",
+        "url": "https://solana.com/docs",
         "type": "exercise"
       }
     ],
@@ -975,7 +975,7 @@ export const dailyTasks: DailyTask[] = [
     "practice": [
       {
         "title": "Build a program that validates instruction sequence",
-        "url": "#",
+        "url": "https://github.com/solana-labs/solana-program-library",
         "type": "exercise"
       }
     ],
@@ -992,19 +992,19 @@ export const dailyTasks: DailyTask[] = [
     "study": [
       {
         "title": "Read Solana docs \"Compute Budget\" optimization tips",
-        "url": "https://solana.com/docs",
+        "url": "https://solana.com/docs/core/fees#compute-budget",
         "type": "documentation"
       }
     ],
     "practice": [
       {
         "title": "Profile your programs",
-        "url": "#",
+        "url": "https://solana.com/docs",
         "type": "exercise"
       },
       {
         "title": "optimize hot paths",
-        "url": "#",
+        "url": "https://solana.com/docs",
         "type": "exercise"
       }
     ],
@@ -1021,14 +1021,14 @@ export const dailyTasks: DailyTask[] = [
     "study": [
       {
         "title": "Review all Week 5 materials",
-        "url": "#",
+        "url": "https://solana.com/docs",
         "type": "documentation"
       }
     ],
     "practice": [
       {
         "title": "Build a vault with multiple security layers",
-        "url": "#",
+        "url": "https://github.com/squads-protocol/squads-mpl",
         "type": "exercise"
       }
     ],
@@ -1052,7 +1052,7 @@ export const dailyTasks: DailyTask[] = [
     "practice": [
       {
         "title": "Create a simple Node.js script that queries the blockchain",
-        "url": "#",
+        "url": "https://github.com/solana-labs/solana-program-library",
         "type": "exercise"
       }
     ],
@@ -1093,14 +1093,14 @@ export const dailyTasks: DailyTask[] = [
     "study": [
       {
         "title": "Read Web3.js \"Transactions\" documentation",
-        "url": "https://solana-labs.github.io/solana-web3.js/",
+        "url": "https://solana.com/docs/core/transactions",
         "type": "documentation"
       }
     ],
     "practice": [
       {
         "title": "Build a transaction that transfers SOL",
-        "url": "#",
+        "url": "https://solana.com/docs",
         "type": "exercise"
       }
     ],
@@ -1117,8 +1117,8 @@ export const dailyTasks: DailyTask[] = [
     "study": [
       {
         "title": "Read Anchor \"Client Generation\"",
-        "url": "https://docs.solana.com/cli",
-        "type": "tool"
+        "url": "https://www.anchor-lang.com/",
+        "type": "documentation"
       },
       {
         "title": "Web3.js \"Instructions\"",
@@ -1129,8 +1129,8 @@ export const dailyTasks: DailyTask[] = [
     "practice": [
       {
         "title": "Use generated TypeScript client to call program instructions",
-        "url": "https://docs.solana.com/cli",
-        "type": "tool"
+        "url": "https://solana.com/docs",
+        "type": "exercise"
       }
     ],
     "deliverable": "Create a React component that calls your todo list program",
@@ -1153,12 +1153,12 @@ export const dailyTasks: DailyTask[] = [
     "practice": [
       {
         "title": "Subscribe to account changes",
-        "url": "#",
+        "url": "https://solana.com/docs",
         "type": "exercise"
       },
       {
         "title": "update UI",
-        "url": "#",
+        "url": "https://solana.com/docs",
         "type": "exercise"
       }
     ],
@@ -1180,19 +1180,19 @@ export const dailyTasks: DailyTask[] = [
       },
       {
         "title": "best practices",
-        "url": "#",
-        "type": "documentation"
+        "url": "https://github.com/solana-labs/solana-program-library",
+        "type": "exercise"
       }
     ],
     "practice": [
       {
         "title": "Add error boundaries",
-        "url": "#",
+        "url": "https://solana.com/docs",
         "type": "exercise"
       },
       {
         "title": "loading states",
-        "url": "#",
+        "url": "https://solana.com/docs",
         "type": "exercise"
       }
     ],
@@ -1209,14 +1209,14 @@ export const dailyTasks: DailyTask[] = [
     "study": [
       {
         "title": "Review all Week 6 materials",
-        "url": "#",
+        "url": "https://solana.com/docs",
         "type": "documentation"
       }
     ],
     "practice": [
       {
         "title": "Build a full React app for todo management",
-        "url": "#",
+        "url": "https://github.com/solana-labs/solana-program-library",
         "type": "exercise"
       }
     ],
@@ -1238,7 +1238,7 @@ export const dailyTasks: DailyTask[] = [
       },
       {
         "title": "setup guide",
-        "url": "#",
+        "url": "https://solana.com/docs",
         "type": "documentation"
       }
     ],
@@ -1250,7 +1250,7 @@ export const dailyTasks: DailyTask[] = [
       },
       {
         "title": "configure your app to use it",
-        "url": "#",
+        "url": "https://solana.com/docs",
         "type": "exercise"
       }
     ],
@@ -1267,19 +1267,19 @@ export const dailyTasks: DailyTask[] = [
     "study": [
       {
         "title": "Read Helius \"Parsed Transactions\"",
-        "url": "https://docs.helius.dev/",
+        "url": "https://solana.com/docs/core/transactions",
         "type": "documentation"
       },
       {
         "title": "\"Webhooks\" documentation",
-        "url": "#",
+        "url": "https://docs.helius.dev/",
         "type": "documentation"
       }
     ],
     "practice": [
       {
         "title": "Set up webhook to receive transaction notifications",
-        "url": "#",
+        "url": "https://solana.com/docs",
         "type": "exercise"
       }
     ],
@@ -1296,19 +1296,19 @@ export const dailyTasks: DailyTask[] = [
     "study": [
       {
         "title": "Review indexing patterns",
-        "url": "#",
+        "url": "https://solana.com/docs",
         "type": "documentation"
       },
       {
         "title": "databases",
-        "url": "#",
+        "url": "https://solana.com/docs",
         "type": "documentation"
       }
     ],
     "practice": [
       {
         "title": "Build a Node.js script that indexes your program's events",
-        "url": "#",
+        "url": "https://github.com/solana-labs/solana-program-library",
         "type": "exercise"
       }
     ],
@@ -1325,14 +1325,14 @@ export const dailyTasks: DailyTask[] = [
     "study": [
       {
         "title": "Read API design best practices",
-        "url": "#",
-        "type": "documentation"
+        "url": "https://github.com/solana-labs/solana-program-library",
+        "type": "exercise"
       }
     ],
     "practice": [
       {
         "title": "Design REST endpoints for your dApp",
-        "url": "#",
+        "url": "https://solana.com/docs",
         "type": "exercise"
       }
     ],
@@ -1349,14 +1349,14 @@ export const dailyTasks: DailyTask[] = [
     "study": [
       {
         "title": "Read Express.js documentation",
-        "url": "#",
+        "url": "https://expressjs.com/",
         "type": "documentation"
       }
     ],
     "practice": [
       {
         "title": "Build API endpoints for your dApp",
-        "url": "#",
+        "url": "https://github.com/solana-labs/solana-program-library",
         "type": "exercise"
       }
     ],
@@ -1373,14 +1373,14 @@ export const dailyTasks: DailyTask[] = [
     "study": [
       {
         "title": "Read PostgreSQL or MongoDB basics",
-        "url": "#",
+        "url": "https://solana.com/docs",
         "type": "documentation"
       }
     ],
     "practice": [
       {
         "title": "Connect your API to a database",
-        "url": "#",
+        "url": "https://solana.com/docs",
         "type": "exercise"
       }
     ],
@@ -1397,14 +1397,14 @@ export const dailyTasks: DailyTask[] = [
     "study": [
       {
         "title": "Review all Week 7 materials",
-        "url": "#",
+        "url": "https://solana.com/docs",
         "type": "documentation"
       }
     ],
     "practice": [
       {
         "title": "Build a production-ready backend",
-        "url": "#",
+        "url": "https://github.com/solana-labs/solana-program-library",
         "type": "exercise"
       }
     ],
@@ -1421,19 +1421,19 @@ export const dailyTasks: DailyTask[] = [
     "study": [
       {
         "title": "Read Next.js documentation",
-        "url": "https://solana.com/docs/frontend/nextjs-solana",
+        "url": "https://nextjs.org/docs",
         "type": "documentation"
       },
       {
         "title": "Solana integration guide",
-        "url": "#",
+        "url": "https://solana.com/docs",
         "type": "documentation"
       }
     ],
     "practice": [
       {
         "title": "Create a Next.js app with Solana integration",
-        "url": "https://solana.com/docs/frontend/nextjs-solana",
+        "url": "https://nextjs.org/docs",
         "type": "exercise"
       }
     ],
@@ -1450,24 +1450,24 @@ export const dailyTasks: DailyTask[] = [
     "study": [
       {
         "title": "Read about Context API",
-        "url": "#",
+        "url": "https://solana.com/docs",
         "type": "documentation"
       },
       {
         "title": "Zustand",
-        "url": "#",
+        "url": "https://solana.com/docs",
         "type": "documentation"
       },
       {
         "title": "or Redux",
-        "url": "#",
+        "url": "https://solana.com/docs",
         "type": "documentation"
       }
     ],
     "practice": [
       {
         "title": "Implement state management in your app",
-        "url": "#",
+        "url": "https://github.com/solana-labs/solana-program-library",
         "type": "exercise"
       }
     ],
@@ -1484,19 +1484,19 @@ export const dailyTasks: DailyTask[] = [
     "study": [
       {
         "title": "Read testing best practices for dApps",
-        "url": "https://www.anchor-lang.com/",
-        "type": "documentation"
+        "url": "https://github.com/solana-labs/solana-program-library",
+        "type": "exercise"
       }
     ],
     "practice": [
       {
         "title": "Write unit",
-        "url": "#",
+        "url": "https://github.com/solana-labs/solana-program-library",
         "type": "exercise"
       },
       {
         "title": "integration tests",
-        "url": "#",
+        "url": "https://github.com/solana-labs/solana-program-library",
         "type": "exercise"
       }
     ],
@@ -1513,19 +1513,19 @@ export const dailyTasks: DailyTask[] = [
     "study": [
       {
         "title": "Read Solana devnet deployment guide",
-        "url": "#",
+        "url": "https://solana.com/docs",
         "type": "documentation"
       }
     ],
     "practice": [
       {
         "title": "Deploy your program",
-        "url": "#",
+        "url": "https://solana.com/docs",
         "type": "exercise"
       },
       {
         "title": "frontend to devnet",
-        "url": "#",
+        "url": "https://solana.com/docs",
         "type": "exercise"
       }
     ],
@@ -1542,24 +1542,24 @@ export const dailyTasks: DailyTask[] = [
     "study": [
       {
         "title": "Read monitoring",
-        "url": "#",
+        "url": "https://solana.com/docs",
         "type": "documentation"
       },
       {
         "title": "analytics best practices",
-        "url": "#",
-        "type": "documentation"
+        "url": "https://github.com/solana-labs/solana-program-library",
+        "type": "exercise"
       }
     ],
     "practice": [
       {
         "title": "Set up error tracking",
-        "url": "#",
+        "url": "https://solana.com/docs",
         "type": "exercise"
       },
       {
         "title": "analytics",
-        "url": "#",
+        "url": "https://solana.com/docs",
         "type": "exercise"
       }
     ],
@@ -1576,14 +1576,14 @@ export const dailyTasks: DailyTask[] = [
     "study": [
       {
         "title": "Review documentation best practices",
-        "url": "#",
-        "type": "documentation"
+        "url": "https://github.com/solana-labs/solana-program-library",
+        "type": "exercise"
       }
     ],
     "practice": [
       {
         "title": "Write comprehensive documentation",
-        "url": "#",
+        "url": "https://github.com/solana-labs/solana-program-library",
         "type": "exercise"
       }
     ],
@@ -1600,19 +1600,19 @@ export const dailyTasks: DailyTask[] = [
     "study": [
       {
         "title": "Review all previous materials",
-        "url": "#",
+        "url": "https://solana.com/docs",
         "type": "documentation"
       }
     ],
     "practice": [
       {
         "title": "Polish",
-        "url": "#",
+        "url": "https://solana.com/docs",
         "type": "exercise"
       },
       {
         "title": "finalize your dApp",
-        "url": "#",
+        "url": "https://solana.com/docs",
         "type": "exercise"
       }
     ],
@@ -1629,19 +1629,19 @@ export const dailyTasks: DailyTask[] = [
     "study": [
       {
         "title": "Read audit checklists",
-        "url": "#",
-        "type": "exercise"
+        "url": "https://github.com/sec-3/solana-security-audit-checklist",
+        "type": "documentation"
       },
       {
         "title": "best practices",
-        "url": "#",
-        "type": "documentation"
+        "url": "https://github.com/solana-labs/solana-program-library",
+        "type": "exercise"
       }
     ],
     "practice": [
       {
         "title": "Review your code against security checklist",
-        "url": "#",
+        "url": "https://solana.com/docs",
         "type": "exercise"
       }
     ],
@@ -1658,19 +1658,19 @@ export const dailyTasks: DailyTask[] = [
     "study": [
       {
         "title": "Read about fuzzing",
-        "url": "#",
-        "type": "exercise"
+        "url": "https://github.com/coral-xyz/anchor/tree/master/tests/fuzz",
+        "type": "documentation"
       },
       {
         "title": "property-based testing",
-        "url": "https://www.anchor-lang.com/",
+        "url": "https://github.com/coral-xyz/anchor/tree/master/tests/fuzz",
         "type": "documentation"
       }
     ],
     "practice": [
       {
         "title": "Set up fuzzing for your program",
-        "url": "#",
+        "url": "https://github.com/coral-xyz/anchor/tree/master/tests/fuzz",
         "type": "exercise"
       }
     ],
@@ -1687,14 +1687,14 @@ export const dailyTasks: DailyTask[] = [
     "study": [
       {
         "title": "Read about formal verification in Rust",
-        "url": "#",
+        "url": "https://github.com/trailofbits/trident",
         "type": "documentation"
       }
     ],
     "practice": [
       {
         "title": "Study formal verification examples",
-        "url": "#",
+        "url": "https://github.com/trailofbits/trident",
         "type": "exercise"
       }
     ],
@@ -1711,19 +1711,19 @@ export const dailyTasks: DailyTask[] = [
     "study": [
       {
         "title": "Read about Ed25519",
-        "url": "#",
+        "url": "https://solana.com/docs",
         "type": "documentation"
       },
       {
         "title": "secp256k1 in Solana",
-        "url": "#",
+        "url": "https://solana.com/docs",
         "type": "documentation"
       }
     ],
     "practice": [
       {
         "title": "Implement signature verification in a program",
-        "url": "#",
+        "url": "https://github.com/solana-labs/solana-program-library",
         "type": "exercise"
       }
     ],
@@ -1769,19 +1769,19 @@ export const dailyTasks: DailyTask[] = [
     "study": [
       {
         "title": "Read about role-based",
-        "url": "#",
+        "url": "https://solana.com/docs",
         "type": "documentation"
       },
       {
         "title": "attribute-based access control",
-        "url": "#",
+        "url": "https://www.anchor-lang.com/docs/constraints",
         "type": "documentation"
       }
     ],
     "practice": [
       {
         "title": "Build a program with complex permissions",
-        "url": "#",
+        "url": "https://github.com/solana-labs/solana-program-library",
         "type": "exercise"
       }
     ],
@@ -1798,14 +1798,14 @@ export const dailyTasks: DailyTask[] = [
     "study": [
       {
         "title": "Review all Week 9 materials",
-        "url": "#",
+        "url": "https://solana.com/docs",
         "type": "documentation"
       }
     ],
     "practice": [
       {
         "title": "Build a secure protocol with all learned patterns",
-        "url": "#",
+        "url": "https://github.com/solana-labs/solana-security-workshop",
         "type": "exercise"
       }
     ],
@@ -1822,19 +1822,19 @@ export const dailyTasks: DailyTask[] = [
     "study": [
       {
         "title": "Read Solana profiling tools documentation",
-        "url": "#",
+        "url": "https://solana.com/docs/core/fees#compute-budget",
         "type": "documentation"
       }
     ],
     "practice": [
       {
         "title": "Profile your program",
-        "url": "#",
+        "url": "https://solana.com/docs",
         "type": "exercise"
       },
       {
         "title": "identify bottlenecks",
-        "url": "#",
+        "url": "https://solana.com/docs",
         "type": "exercise"
       }
     ],
@@ -1851,14 +1851,14 @@ export const dailyTasks: DailyTask[] = [
     "study": [
       {
         "title": "Read compute optimization techniques",
-        "url": "#",
+        "url": "https://solana.com/docs/core/fees#compute-budget",
         "type": "documentation"
       }
     ],
     "practice": [
       {
         "title": "Optimize your program's hot paths",
-        "url": "#",
+        "url": "https://solana.com/docs",
         "type": "exercise"
       }
     ],
@@ -1875,24 +1875,24 @@ export const dailyTasks: DailyTask[] = [
     "study": [
       {
         "title": "Read Solana memory constraints",
-        "url": "https://www.anchor-lang.com/",
+        "url": "https://solana.com/docs",
         "type": "documentation"
       },
       {
         "title": "optimization",
-        "url": "#",
+        "url": "https://solana.com/docs",
         "type": "documentation"
       }
     ],
     "practice": [
       {
         "title": "Optimize account sizes",
-        "url": "#",
+        "url": "https://solana.com/docs",
         "type": "exercise"
       },
       {
         "title": "data layouts",
-        "url": "#",
+        "url": "https://solana.com/docs",
         "type": "exercise"
       }
     ],
@@ -1909,14 +1909,14 @@ export const dailyTasks: DailyTask[] = [
     "study": [
       {
         "title": "Read about Solana's parallel transaction processing",
-        "url": "#",
+        "url": "https://solana.com/docs",
         "type": "documentation"
       }
     ],
     "practice": [
       {
         "title": "Design programs that benefit from parallelization",
-        "url": "#",
+        "url": "https://solana.com/docs",
         "type": "exercise"
       }
     ],
@@ -1933,14 +1933,14 @@ export const dailyTasks: DailyTask[] = [
     "study": [
       {
         "title": "Read batch processing patterns",
-        "url": "#",
+        "url": "https://solana.com/docs",
         "type": "documentation"
       }
     ],
     "practice": [
       {
         "title": "Build a program that handles batch operations",
-        "url": "#",
+        "url": "https://github.com/solana-labs/solana-program-library",
         "type": "exercise"
       }
     ],
@@ -1957,19 +1957,19 @@ export const dailyTasks: DailyTask[] = [
     "study": [
       {
         "title": "Read Solana fee structure",
-        "url": "#",
+        "url": "https://solana.com/docs",
         "type": "documentation"
       },
       {
         "title": "optimization",
-        "url": "#",
+        "url": "https://solana.com/docs",
         "type": "documentation"
       }
     ],
     "practice": [
       {
         "title": "Optimize your dApp for minimal fees",
-        "url": "#",
+        "url": "https://solana.com/docs",
         "type": "exercise"
       }
     ],
@@ -1986,14 +1986,14 @@ export const dailyTasks: DailyTask[] = [
     "study": [
       {
         "title": "Review all Week 10 materials",
-        "url": "#",
+        "url": "https://solana.com/docs",
         "type": "documentation"
       }
     ],
     "practice": [
       {
         "title": "Build a high-performance dApp",
-        "url": "#",
+        "url": "https://github.com/solana-labs/dapp-scaffold",
         "type": "exercise"
       }
     ],
@@ -2010,14 +2010,14 @@ export const dailyTasks: DailyTask[] = [
     "study": [
       {
         "title": "Read about program architecture patterns",
-        "url": "#",
+        "url": "https://solana.com/docs",
         "type": "documentation"
       }
     ],
     "practice": [
       {
         "title": "Design a modular program structure",
-        "url": "#",
+        "url": "https://solana.com/docs",
         "type": "exercise"
       }
     ],
@@ -2034,14 +2034,14 @@ export const dailyTasks: DailyTask[] = [
     "study": [
       {
         "title": "Read about composable protocols",
-        "url": "#",
+        "url": "https://solana.com/docs",
         "type": "documentation"
       }
     ],
     "practice": [
       {
         "title": "Build multiple programs that interact",
-        "url": "#",
+        "url": "https://github.com/solana-labs/solana-program-library",
         "type": "exercise"
       }
     ],
@@ -2058,14 +2058,14 @@ export const dailyTasks: DailyTask[] = [
     "study": [
       {
         "title": "Read about state management patterns",
-        "url": "#",
+        "url": "https://solana.com/docs",
         "type": "documentation"
       }
     ],
     "practice": [
       {
         "title": "Design systems for large-scale state",
-        "url": "#",
+        "url": "https://solana.com/docs",
         "type": "exercise"
       }
     ],
@@ -2082,19 +2082,19 @@ export const dailyTasks: DailyTask[] = [
     "study": [
       {
         "title": "Read upgrade patterns",
-        "url": "#",
+        "url": "https://solana.com/docs",
         "type": "documentation"
       },
       {
         "title": "migrations",
-        "url": "#",
+        "url": "https://solana.com/docs",
         "type": "documentation"
       }
     ],
     "practice": [
       {
         "title": "Design upgrade paths for your programs",
-        "url": "#",
+        "url": "https://solana.com/docs",
         "type": "exercise"
       }
     ],
@@ -2111,19 +2111,19 @@ export const dailyTasks: DailyTask[] = [
     "study": [
       {
         "title": "Read about DAO",
-        "url": "#",
+        "url": "https://spl.solana.com/governance",
         "type": "documentation"
       },
       {
         "title": "governance patterns",
-        "url": "#",
+        "url": "https://spl.solana.com/governance",
         "type": "documentation"
       }
     ],
     "practice": [
       {
         "title": "Build a simple DAO program",
-        "url": "#",
+        "url": "https://spl.solana.com/governance",
         "type": "exercise"
       }
     ],
@@ -2140,14 +2140,14 @@ export const dailyTasks: DailyTask[] = [
     "study": [
       {
         "title": "Read about cross-chain protocols",
-        "url": "#",
+        "url": "https://wormhole.com/docs/",
         "type": "documentation"
       }
     ],
     "practice": [
       {
         "title": "Design protocol-agnostic architecture",
-        "url": "#",
+        "url": "https://solana.com/docs",
         "type": "exercise"
       }
     ],
@@ -2164,14 +2164,14 @@ export const dailyTasks: DailyTask[] = [
     "study": [
       {
         "title": "Review all Week 11 materials",
-        "url": "#",
+        "url": "https://solana.com/docs",
         "type": "documentation"
       }
     ],
     "practice": [
       {
         "title": "Build a complete scalable protocol",
-        "url": "#",
+        "url": "https://github.com/coral-xyz/anchor",
         "type": "exercise"
       }
     ],
@@ -2188,14 +2188,14 @@ export const dailyTasks: DailyTask[] = [
     "study": [
       {
         "title": "Read mainnet deployment checklist",
-        "url": "#",
+        "url": "https://solana.com/docs",
         "type": "documentation"
       }
     ],
     "practice": [
       {
         "title": "Complete all pre-deployment tasks",
-        "url": "#",
+        "url": "https://solana.com/docs",
         "type": "exercise"
       }
     ],
@@ -2212,19 +2212,19 @@ export const dailyTasks: DailyTask[] = [
     "study": [
       {
         "title": "Review audit reports",
-        "url": "#",
-        "type": "exercise"
+        "url": "https://github.com/sec-3/solana-security-audit-checklist",
+        "type": "documentation"
       },
       {
         "title": "best practices",
-        "url": "#",
-        "type": "documentation"
+        "url": "https://github.com/solana-labs/solana-program-library",
+        "type": "exercise"
       }
     ],
     "practice": [
       {
         "title": "Conduct thorough self-audit",
-        "url": "#",
+        "url": "https://github.com/sec-3/solana-security-audit-checklist",
         "type": "exercise"
       }
     ],
@@ -2241,14 +2241,14 @@ export const dailyTasks: DailyTask[] = [
     "study": [
       {
         "title": "Read testnet deployment guide",
-        "url": "#",
-        "type": "documentation"
+        "url": "https://github.com/solana-labs/solana-program-library",
+        "type": "exercise"
       }
     ],
     "practice": [
       {
         "title": "Deploy program to testnet",
-        "url": "#",
+        "url": "https://github.com/solana-labs/solana-program-library",
         "type": "exercise"
       }
     ],
@@ -2265,14 +2265,14 @@ export const dailyTasks: DailyTask[] = [
     "study": [
       {
         "title": "Review mainnet deployment procedures",
-        "url": "#",
+        "url": "https://solana.com/docs",
         "type": "documentation"
       }
     ],
     "practice": [
       {
         "title": "Deploy your program to mainnet",
-        "url": "#",
+        "url": "https://solana.com/docs",
         "type": "exercise"
       }
     ],
@@ -2289,19 +2289,19 @@ export const dailyTasks: DailyTask[] = [
     "study": [
       {
         "title": "Read monitoring",
-        "url": "#",
+        "url": "https://solana.com/docs",
         "type": "documentation"
       },
       {
         "title": "alerting best practices",
-        "url": "#",
-        "type": "documentation"
+        "url": "https://github.com/solana-labs/solana-program-library",
+        "type": "exercise"
       }
     ],
     "practice": [
       {
         "title": "Set up comprehensive monitoring",
-        "url": "#",
+        "url": "https://solana.com/docs",
         "type": "exercise"
       }
     ],
