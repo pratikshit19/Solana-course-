@@ -1,4 +1,5 @@
 import { DailyTask, Resource } from '@/lib/daily-tasks';
+import { Link } from 'wouter';
 import { Card } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
@@ -139,24 +140,28 @@ export function DailyTaskDetail({
         </button>
         {expandedSections.includes('study') && (
           <div className="space-y-3">
-            {task.study.map((resource, idx) => (
-              <a
-                key={idx}
-                href={resource.url}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="group block"
-              >
-                <div className="flex gap-3 p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
+            {task.study.map((resource, idx) => {
+              const isPlaceholder = resource.url === '#' || resource.url === '';
+              const isInternal = resource.url.startsWith('/');
+              const content = (
+                <div className={`flex gap-3 p-3 rounded-lg border border-border ${
+                  isPlaceholder
+                    ? 'bg-secondary/40'
+                    : 'hover:border-primary/50 hover:bg-primary/5 cursor-pointer'
+                } transition-all`}>
                   <span className="text-lg flex-shrink-0">
                     {resourceTypeIcons[resource.type]}
                   </span>
                   <div className="flex-1 min-w-0">
                     <div className="flex items-center gap-2 mb-1">
-                      <span className="font-medium text-foreground group-hover:text-primary transition-colors">
+                      <span className={`font-medium text-foreground ${
+                        isPlaceholder ? '' : 'group-hover:text-primary'
+                      } transition-colors`}>
                         {resource.title}
                       </span>
-                      <ExternalLink className="w-3 h-3 text-muted-foreground group-hover:text-primary transition-colors flex-shrink-0" />
+                      {!isPlaceholder && !isInternal && (
+                        <ExternalLink className="w-3 h-3 text-muted-foreground group-hover:text-primary transition-colors flex-shrink-0" />
+                      )}
                     </div>
                     <Badge
                       variant="secondary"
@@ -168,8 +173,32 @@ export function DailyTaskDetail({
                     </Badge>
                   </div>
                 </div>
-              </a>
-            ))}
+              );
+
+              if (isPlaceholder) {
+                return <div key={idx} className="block">{content}</div>;
+              }
+
+              if (isInternal) {
+                return (
+                  <Link key={idx} href={resource.url} className="group block">
+                    {content}
+                  </Link>
+                );
+              }
+
+              return (
+                <a
+                  key={idx}
+                  href={resource.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group block"
+                >
+                  {content}
+                </a>
+              );
+            })}
           </div>
         )}
       </Card>
@@ -191,24 +220,28 @@ export function DailyTaskDetail({
         {expandedSections.includes('practice') && (
           <div className="space-y-3">
             {task.practice.length > 0 ? (
-              task.practice.map((resource, idx) => (
-                <a
-                  key={idx}
-                  href={resource.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="group block"
-                >
-                  <div className="flex gap-3 p-3 rounded-lg border border-border hover:border-accent/50 hover:bg-accent/5 transition-all">
+              task.practice.map((resource, idx) => {
+                const isPlaceholder = resource.url === '#' || resource.url === '';
+                const isInternal = resource.url.startsWith('/');
+                const content = (
+                  <div className={`flex gap-3 p-3 rounded-lg border border-border ${
+                    isPlaceholder
+                      ? 'bg-secondary/40'
+                      : 'hover:border-accent/50 hover:bg-accent/5 cursor-pointer'
+                  } transition-all`}>
                     <span className="text-lg flex-shrink-0">
                       {resourceTypeIcons[resource.type]}
                     </span>
                     <div className="flex-1 min-w-0">
                       <div className="flex items-center gap-2 mb-1">
-                        <span className="font-medium text-foreground group-hover:text-accent transition-colors">
+                        <span className={`font-medium text-foreground ${
+                          isPlaceholder ? '' : 'group-hover:text-accent'
+                        } transition-colors`}>
                           {resource.title}
                         </span>
-                        <ExternalLink className="w-3 h-3 text-muted-foreground group-hover:text-accent transition-colors flex-shrink-0" />
+                        {!isPlaceholder && !isInternal && (
+                          <ExternalLink className="w-3 h-3 text-muted-foreground group-hover:text-accent transition-colors flex-shrink-0" />
+                        )}
                       </div>
                       <Badge
                         variant="secondary"
@@ -220,8 +253,32 @@ export function DailyTaskDetail({
                       </Badge>
                     </div>
                   </div>
-                </a>
-              ))
+                );
+
+                if (isPlaceholder) {
+                  return <div key={idx} className="block">{content}</div>;
+                }
+
+                if (isInternal) {
+                  return (
+                    <Link key={idx} href={resource.url} className="group block">
+                      {content}
+                    </Link>
+                  );
+                }
+
+                return (
+                  <a
+                    key={idx}
+                    href={resource.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="group block"
+                  >
+                    {content}
+                  </a>
+                );
+              })
             ) : (
               <p className="text-muted-foreground italic">
                 No specific practice exercises for this day.
